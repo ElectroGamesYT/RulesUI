@@ -62,21 +62,23 @@ class Main extends PluginBase implements Listener{
                     $sender->sendMessage($this->getConfig()->get("use_in_game"));
                       return true;
                }
-           $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-           $form = $api->createSimpleForm(function (Player $sender, int $data = null) {
-               $result = $data;
-               if ($result == null) {
-               }
-               switch ($result) {
-                     case 0:
+          $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+          $form = $api->createSimpleForm(function (Player $sender, int $data = null) {
+              $result = $data;
+              if($result === null){
+                  return true;
+              }             
+              switch($result){
+                  case 0:
+                    
+                  break;
 
-                     break;
-                     }
-               });
-               $form->setTitle($this->getConfig()->get("title"));
-               $form->setContent($this->getConfig()->get("description"));
-               $form->addButton($this->getConfig()->get("button"));
-               $form->sendToPlayer($sender);
-               return $form;
+                  }
+              });
+              $form->setTitle($this->getConfig()->get("title"));
+              $form->setContent($this->getConfig()->get("description"));
+              $form->addButton($this->getConfig()->get("button"));
+              $form->sendToPlayer($sender);
+              return $form;
    }
 }
