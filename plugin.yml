@@ -1,0 +1,11 @@
+name: RulesUI
+version: 1.0.0
+main: Rendii09\RulesUI\Main
+api: [3.0.0, 4.0.0]
+author: Rendii09
+
+commands:
+  rules:
+    usage: /rules
+    aliases: [rulesui]
+    description: "Open the Rules of this Server"
