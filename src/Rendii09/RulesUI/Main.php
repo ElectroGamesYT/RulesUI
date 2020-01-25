@@ -77,7 +77,6 @@ class Main extends PluginBase implements Listener{
                $form->setContent($this->getConfig()->get("description"));
                $form->addButton($this->getConfig()->get("button"));
                $form->sendToPlayer($sender);
-               }
                return $form;
    }
 }
