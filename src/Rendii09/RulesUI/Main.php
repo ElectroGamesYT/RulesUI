@@ -55,30 +55,34 @@ class Main extends PluginBase implements Listener{
        $this->getLogger()->info(C::RED . "Disable!");
    }
 
-   public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
-       switch($command->getName()){
-           case "rules":
-               if(!($sender instanceof Player)){
-                    $sender->sendMessage($this->getConfig()->get("use_in_game"));
-                      return true;
-               }
-          $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-          $form = $api->createSimpleForm(function (Player $sender, int $data = null) {
-              $result = $data;
-              if($result === null){
-                  return true;
-              }             
-              switch($result){
-                  case 0:
-                    
-                  break;
+   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool {
+       switch($cmd->getName()) {
+             case "rules":
+                 if($sender instanceof Player) {
+                    $this->openRulesUI($sender);
+                 }
+       }
+       return true;
+   }
 
-                  }
-              });
-              $form->setTitle($this->getConfig()->get("title"));
-              $form->setContent($this->getConfig()->get("description"));
-              $form->addButton($this->getConfig()->get("button"));
-              $form->sendToPlayer($sender);
-              return $form;
+   public function openRulesUI($sender){ 
+       $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+       $form = $api->createSimpleForm(function (Player $sender, int $data = null) {
+           $result = $data;
+           if($result === null){
+               return true;
+           }             
+           switch($result){
+               case 0:
+                    
+               break;
+
+               }
+           });
+           $form->setTitle($this->getConfig()->get("title"));
+           $form->setContent($this->getConfig()->get("description"));
+           $form->addButton($this->getConfig()->get("button"));
+           $form->sendToPlayer($sender);
+           return $form;
    }
 }
