@@ -1,3 +1,5 @@
+[![Rendii09](https://i.ibb.co/mBZ7StQ/Rendii09-Rules-UI.jpg)]()
+
 # Plugin Info
  - Command : /rules
  - Aliases : /rulesui
