@@ -1,3 +1,4 @@
+![Poggit-CI](https://poggit.pmmp.io/ci.shield/Rendii09/RulesUI/RulesUI)
 [![HitCount](http://hits.dwyl.com/Rendii09/RulesUI.svg)](http://hits.dwyl.com/Rendii09/RulesUI)
 
 [![Rendii09](https://i.ibb.co/mBZ7StQ/Rendii09-Rules-UI.jpg)]()
