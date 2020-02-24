@@ -1,7 +1,8 @@
 ![Poggit-CI](https://poggit.pmmp.io/ci.shield/Rendii09/RulesUI/RulesUI)
 [![HitCount](http://hits.dwyl.com/Rendii09/RulesUI.svg)](http://hits.dwyl.com/Rendii09/RulesUI)
 
-[![Rendii09](https://i.ibb.co/mBZ7StQ/Rendii09-Rules-UI.jpg)]()
+# Screenshot
+![RulesUI](https://cloud.githubusercontent.com/assets/5456665/13322882/e74f6626-dc00-11e5-921d-f6d024a01eaa.png "GitHub")
 
 # Plugin Info
  - Command : /rules
