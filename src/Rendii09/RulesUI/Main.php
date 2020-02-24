@@ -60,7 +60,11 @@ class Main extends PluginBase implements Listener{
              case "rules":
                  if($sender instanceof Player) {
                     $this->openRulesUI($sender);
-                 }
+                 }else{
+                        $sender->sendMessage($this->getConfig()->get("use_in_game"));
+                        return true;
+                    }
+                 return true;
        }
        return true;
    }
@@ -74,14 +78,14 @@ class Main extends PluginBase implements Listener{
            }             
            switch($result){
                case 0:
-                    
+                    $sender->sendMessage($this->getConfig()->get("rules.msg"));
                break;
 
                }
            });
            $form->setTitle($this->getConfig()->get("title"));
            $form->setContent($this->getConfig()->get("description"));
-           $form->addButton($this->getConfig()->get("button"));
+           $form->addButton($this->getConfig()->get("btn"), 0, "textures/ui/realms_green_check");
            $form->sendToPlayer($sender);
            return $form;
    }
