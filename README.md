@@ -13,4 +13,5 @@
 
 # Config
 _____
+
 [![Coverage Status](https://coveralls.io/repos/github/brbsix/github-download-count/badge.svg?branch=master)](https://coveralls.io/github/brbsix/github-download-count?branch=master)
