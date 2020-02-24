@@ -2,7 +2,7 @@
 [![HitCount](http://hits.dwyl.com/Rendii09/RulesUI.svg)](http://hits.dwyl.com/Rendii09/RulesUI)
 
 # Screenshot
-![RulesUI](https://cloud.githubusercontent.com/assets/5456665/13322882/e74f6626-dc00-11e5-921d-f6d024a01eaa.png "GitHub")
+![Screenshot RulesUI](https://i.ibb.co/5xw2PqT/Rendii09-Rules-UI.jpg "RulesUI")
 
 # Plugin Info
  - Command : /rules
