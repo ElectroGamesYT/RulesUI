@@ -13,5 +13,21 @@
 
 # Config
 ```
-test
+# RulesUI Config Language File.
+# Use "§" for adding colors.
+# Use "\n" for adding line.
+
+# Description for the Cover.
+use_in_game: "§cUse this command in the game"
+rules.msg: "§aRules! Thank you for reading the Rules"
+
+# Enter the RulesUI Title.
+title: "§l§o§eRULESUI"
+
+# Enter Your Server Rules.
+description: "§b1. Don't cheat \n§b2. Don't use bugs \n§b3. Don't Grief"
+
+# Put the Closing Button.
+btn: "§l§o§aOK \n§r§fTap to Close"
+
 ```
