@@ -29,5 +29,4 @@ description: "§b1. Don't cheat \n§b2. Don't use bugs \n§b3. Don't Grief"
 
 # Put the Closing Button.
 btn: "§l§o§aOK \n§r§fTap to Close"
-
 ```
